@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Test Three</title>
+    <link rel="stylesheet" href="storyPages.css">
+    <script src="pageControl.js" defer></script>
+</head>
+
+<body onload="callPath()"> 
+    <nav>
+        <pre>
+        <a href="index.html">Home</a>      <a href="author.html">About The Author</a>      <a href="audience.html">Who Is This Story For?</a>
+        </pre>
+    </nav>
+    <section>
+    <br>
+    <p>
+        As you press the button on the right, you hear a soft click across the dead silent room as the next door opens. As the voice the intercom reiterates like a broken machine, 
+        <br><pre>       “Please continue to the next phase of the test.”</pre>
+        <br> As you move onto the next phase, you see in this room there is a singular table with 2 sets of wireless headphones placed next to buttons like the previous tests. Over the speaker you hear the following instructions. 
+        <br><pre>       “This is the third stage of this experiment. You are now halfway done. Please listen to the recordings on both of the headsets provided. 
+        Afterwards, press the button of the associated headphone you believe to have the real recording”</pre>      
+    </p>
+    <div class="img-container">
+        <img src="headphones.png" alt="Left set of headphones. Click for left audio." class="normal-img flip-img" id="realHead">
+        <img src="headphones.png" alt="Left set of headphones. Click for left audio." class="normal-img" id="fakeHead">
+    </div>
+    <br>
+    <p>
+        Which button do you press,<!--<a href="page12.html"> the left</a> or the right(see Branch Section Below).-->
+        <div class="btn-container">
+            <button class="circle-btn left-btn" onclick="correctChoice()">Left</button> 
+            <button class="circle-btn right-btn" onclick="wrongChoice()">Right</button>
+        </div>
+    </p>
+
+    <audio id="realClip" src="realAudio.m4a"></audio>
+    <audio id="fakeClip" src="fakeAudio.mp3"></audio>
+    <script>
+        const leftHead = document.getElementById('realHead');
+        const leftAudio = document.getElementById('realClip');
+        const rightHead = document.getElementById('fakeHead');
+        const rightAudio = document.getElementById('fakeClip');
+
+        leftHead.addEventListener('click', ()=>{
+            if(!leftAudio.paused || !rightAudio.paused) return;
+            leftAudio.play();
+        })
+
+        rightHead.addEventListener('click', ()=>{
+            if(!leftAudio.paused || !rightAudio.paused) return;
+            rightAudio.play();
+        })
+    </script>
+    <!--
+   <br> 
+   <h4> Branch Section</h4>
+   <ul>
+        <li>If you had 2 wrong choices before this: <a href="page9.html"> click this link</a></li>
+        <li>If you had 1 wrong choice before this: <a href="page10.html"> click this link</a></li>
+        <li>If you had 0 wrong choices before this: <a href="page11.html"> click this link</a></li>
+   </ul>
+   <br>-->
+    </section>
+</body>
+</html>

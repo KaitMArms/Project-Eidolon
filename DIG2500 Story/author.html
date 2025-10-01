@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>About The Author</title>
+    <link rel="stylesheet" href="mainPages.css">
+</head>
+
+<body>
+   <nav>
+        <pre>
+        <a href="index.html">Home</a>      <a href="author.html">About The Author</a>      <a href="audience.html">Who Is This Story For?</a>
+        </pre>
+    </nav>
+    <div class="light-wrapper"> <!--Do not remove wrapper future me. This keeps nav visible-->
+        <div class="spotlight" id="light">
+        </div> <!--Enables spotlight-->
+
+        <section>
+        <h1>Meet The Author!</h1>
+        <img src="AuthorPhoto.jpg" alt="A picture of Kaitlyn with a decent size frozen margarita at a restraunt" style="border: 2px solid black; border-radius: 10px; width: 600px; height: 800px; text-align: center;">
+        <p>
+            Hi y'all my name is Kaitlyn Armstrong and I am a Computer Science major with a Digital Design minor at the University of Central Florida. I have a passion for video games and as a result my specialty is in video game design. So far I have worked on one game for a different class called Shape Escape and hope to be a part of many future projects. In my free time, rare as it may be, you will find me playing video games, listening to music, spending time with friends and family, and drawing. Lastly, to address the margarita size elephant in the room, I have a true distain of being in photos and as a result the only photo I have of just me from the last 5 years is me happily posing with a sangria margarita on my 21st birthday. Proffesionally? Probably not! However, it was either the margarita or eternal anonimity, so I chose the margarita. I hope this gave you an insight into the woman behind this project, and I hope you got a laugh out of your appreciated curiosity.
+        </p>
+        <br>
+        <h1>The Inspiration</h1>
+        <p>
+        While I wish I came up with this idea all on my own, that is not entirely the case. While the writing and story planning is my own, much of the inspiration for my work in physical media, such as painting, and digital media, such as this project, comes from music. In this case, AI vs Reality (working title actual tbd) was inspired Bunnies by Oliver Richman. I believe giving credit where credit is due and Oliver's work is truly amazing, so below I have attached a link to his song on Youtube. I highly recommend listening to it after you complete the story to see where the idea for this story came from and to support a small indie music artist! 
+        </p>
+        <a href="https://youtu.be/AAr5aRGuDxo?si=JiIVLcFDnsmZgDzj">Bunnies by Oliver Richman</a>
+        <br>
+        <br>
+        <br>
+        </section>
+    </div>
+
+    <script>
+        // Makes it so the light is attached to the cursor & follows it
+        const light = document.getElementById('light');
+        document.addEventListener('mousemove', (e) => {
+            light.style.left = `${e.pageX}px`;
+            light.style.top = `${e.pageY}px`;
+        })
+    </script>
+</body>
+</html>

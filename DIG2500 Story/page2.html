@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Page 2</title>
+    <link rel="stylesheet" href="firstPage.css">
+</head>
+
+<body>
+    <nav>
+        <pre>
+        <a href="index.html">Home</a>      <a href="author.html">About The Author</a>      <a href="audience.html">Who Is This Story For?</a>
+        </pre>
+    </nav>
+    <section>
+    <br>
+    <p>
+        You park at the entrance of the facility you have been invited to. The advertisement showed up in your inbox and it was too good to pass up. The job is quick and easy apparently; just show up, participate in a research test of some sort, and leave with a wad of cash. As you enter the building, you notice how eerily quiet it is, not a single human in sight. Only a series of guest guiding signs accompanied by the stench of rubbing alcohol. You wander through the building to a room with a singular table containing a waiver and a singular door just beyond that. A robotic voice welcomes you and gives you a brief summary of the experiment. They are testing out new technology, and your job is to tell what is real and what is the new AI.      
+    </p>
+    <br>
+    <label>
+        <input type="checkbox" id="acceptCheck">
+        <span class="custom-checkbox"></span>
+        By checking I acknowledge terms and conditions and accept.
+    </label>
+    <br>
+    <label>
+        <input type="checkbox" id="declineCheck">
+        <span class="custom-checkbox"></span>
+        By checking I refuse terms and accept the conditions of backing out.
+    </label>
+    <!--Do you <a href="page3.html">sign the waiver and go through the door</a> or do you<a href="page22.html">have a change of heart and leave</a>.-->
+   <br> 
+    </section>
+
+    <script>
+        document.getElementById('acceptCheck').addEventListener('change',function acceptRedirection(){
+            if(this.checked){
+                window.location.href= 'page3.html';
+            }
+        });
+        document.getElementById('declineCheck').addEventListener('change',  function declineRedirection(){
+            if(this.checked){
+                window.location.href= 'page22.html';
+            }
+        });
+
+    </script>
+</body>
+</html>

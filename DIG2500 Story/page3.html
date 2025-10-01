@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Test One</title>
+    <link rel="stylesheet" href="storyPages.css">
+    <script src="pageControl.js" defer></script>
+
+</head>
+
+<body onload="callPath()"> 
+    <nav>
+        <pre>
+        <a href="index.html">Home</a>      <a href="author.html">About The Author</a>      <a href="audience.html">Who Is This Story For?</a>
+        </pre>
+    </nav>
+    <section>
+    <br>
+    <p>
+        You sign the waiver and make your way into the next room. 2 women sit at desks on opposite sides of the room. Both are sitting and typing out something on a keyboard with monitor screens you cannot see. In front of you is a desk with 2 buttons, one on the left side of the table and the other on the right, just like the woman. 
+        <br> The woman on the left notices your entrance immediately, looking up and waving. Her desk and outfit are immaculately pristine with not a single thing out of place, and her lightning blue eyes stare at you from behind her work before she continues typing away. 
+        <br>The woman on the right takes a minute to respond seemingly engulfed in her work. Her desk is less organized with sticky notes everywhere and a lipstick-stained coffee cup next to her. She waves at you and smiles with slightly smudged lipstick. 
+        <br>Over the intercom the robotic voice chimes in,  
+        <br><pre>       “Which is real: left or right? After you select your choice please continue to the next room.”  </pre>   
+    </p>
+    <p>
+        Which button do you press,<!--<a href="page4.html"> the left</a> or <a href="page5.html">the right</a>-->
+        <div class="btn-container">
+            <button class="circle-btn left-btn" onclick="wrongChoice()">Left</button> 
+            <button class="circle-btn right-btn" onclick="correctChoice()">Right</button>
+        </div>
+    </p>
+   <br> 
+    </section>
+</body>
+</html>

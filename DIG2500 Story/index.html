@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Home</title>
+    <link rel="stylesheet" href="mainPages.css">
+</head>
+
+<body>
+    <nav>
+        <pre>
+        <a href="index.html">Home</a>      <a href="author.html">About The Author</a>      <a href="audience.html">Who Is This Story For?</a>
+        </pre>
+    </nav>
+    <div class="light-wrapper"> <!--Do not remove wrapper future me. This keeps nav visible-->
+        <div class="spotlight" id="light">
+        </div> <!--Enables spotlight-->
+
+        <section>
+        <br>
+        <img src="ProjectEidolonLogo .png" alt="This project's logo. The words 'PROJECT EIDOLON' in blood red spooky font with an eye with a blood red and electric blue." class="normal-img">
+        <p>
+            This is the home page of Project Eidolon. Press the link below to go to the choose your own adventure!
+        </p>
+        <br>
+        <a href="page2.html">Ready to Begin?</a>
+        <br>
+        <p>
+            Please note that all images and voices put through any AI software for the purposes of this project were my own. No one else's work or likeness was used for the purposes of this project. In addition to this, the class that this was made for did not require JS. Any JS used was self taught through libraries and tutorials for portfolio sake. Enjoy!
+        </p>
+        </section>
+    </div>
+
+    <script>
+        // Makes it so the light is attached to the cursor & follows it
+        const light = document.getElementById('light');
+        document.addEventListener('mousemove', (e) => {
+            light.style.left = `${e.pageX}px`;
+            light.style.top = `${e.pageY}px`;
+        })
+    </script>
+</body>
+</html>

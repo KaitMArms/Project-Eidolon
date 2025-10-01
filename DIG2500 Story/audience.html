@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>About The Author</title>
+    <link rel="stylesheet" href="mainPages.css">
+</head>
+
+<body>
+    <nav>
+        <pre>
+        <a href="index.html">Home</a>      <a href="author.html">About The Author</a>      <a href="audience.html">Who Is This Story For?</a>
+        </pre>
+    </nav>
+    <div class="light-wrapper"> <!--Do not remove wrapper future me. This keeps nav visible-->
+        <div class="spotlight" id="light">
+        </div> <!--Enables spotlight-->
+
+        <section>
+            <h1>Story Age Rating: PG-13</h1>
+            <h3>Why this rating?</h3>
+            <p>
+                This chose your own adventure is a psychological horror that explores the blurring line between what is and is not Artifical Intelligence. While there is nothing gruesome or gory is within, it does contain existential questions, depersonalization, and derealization. If you have every had an issue with this type of story or have dealt with severe depression, schizphrenia, or disorders where those themes can make symptoms worst please read with caution. Your mental health is important and no story is worth hurting it. In addition to this warning, the national crisis line is <strong>988</strong>, and while I pray no one reading this every needs to call this number I would rather include it then not.
+            </p>
+            <p>
+                In addition to this content warning, this story needs a graphics warning. It contains effects that mimic flashing lights and colors that may not be suitable for everyone. Disgretion is advised.
+            </p>
+            <br>
+            <h1>Who is this for?</h1>
+            <p>
+                This story is for those who love horror stories based around dread and theming. It is for those who like to have existence questioned and those who like to consider the ramifications of techonology as it advances. This story is framed in an SCP like fashion and a protagonist unaware of what they have gotten themselves into. So, if that sounds like the type of adventure you want to do on this story is for you.
+            </p>
+        </section>
+    </div>
+
+    <script>
+        // Makes it so the light is attached to the cursor & follows it
+        const light = document.getElementById('light');
+        document.addEventListener('mousemove', (e) => {
+            light.style.left = `${e.pageX}px`;
+            light.style.top = `${e.pageY}px`;
+        })
+    </script>
+</body>
+</html>

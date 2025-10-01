@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Test Two</title>
+    <link rel="stylesheet" href="storyPages.css">
+    <script src="pageControl.js" defer></script>
+</head>
+
+<body onload="callPath()">     
+    <nav>
+        <pre>
+        <a href="index.html">Home</a>      <a href="author.html">About The Author</a>      <a href="audience.html">Who Is This Story For?</a>
+        </pre>
+    </nav>
+    <section>
+    <br>
+    <p>
+        <br>As your hand presses the left button, you hear a distant click in the quiet room as the next door opens. You look at your choice, the lady on the left, looking for any indication of correctness. As you do, your heart sinks as you see the AI momentarily glitch as her bright emotionless eyes flash. As you comprehend your mistake, both women motion for you the move into the next room as the voice over the intercom directs,  
+        <br><pre>       “Please continue to the next phase of the test.” </pre> 
+        <br> In this next stage of the test, you see 2 screens in front of you to the left and to the right and selection options identical to the buttons in the previous room. On both sides you see similar photos. Over the intercom you hear in the same mechanical voice, 
+    </p>
+    <div class="img-container">
+        <img src="fakePhoto.jpg" alt="A photo with a sun in the sky and pink sunset. A building is to the left and distant trees are to the right." class="border-img">
+        <img src="realPhoto.jpg" alt="A photo with a moon in the sky on the border between night and day just after unset. A building is to the right and distant trees to the left." class="border-img">
+    </div>
+    <p></p>
+        <br><pre>       “We appreciate your input. Please repeat the process and select the button associated with what you believe to be real image taken with a camera and unedited.”</pre>     
+    </p>
+    <br>
+    <p>
+        Which button do you press,<!--<a href="page6.html"> the left</a> or <a href="page8.html">the right</a>.-->
+        <div class="btn-container">
+            <button class="circle-btn left-btn" onclick="wrongChoice()">Left</button> 
+            <button class="circle-btn right-btn" onclick="correctChoice()">Right</button>
+        </div>
+    </p>
+   <br> 
+    </section>
+</body>
+</html>
